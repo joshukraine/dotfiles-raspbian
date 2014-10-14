@@ -28,6 +28,11 @@ Other packages I like to install at this point:
 
 ### Dotfiles Setup
 
+Install `zsh` and switch to it.
+
+	sudo apt-get install zsh
+	chsh -s $(which zsh)
+
 
 Install [`oh-my-zsh`](https://github.com/robbyrussell/oh-my-zsh).
 
