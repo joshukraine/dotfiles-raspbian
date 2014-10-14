@@ -23,7 +23,7 @@ Update packages.
 	
 Other packages I like to install at this point:
 
-	sudo apt-get install vim tree tmux git figlet
+	sudo apt-get install vim tree tmux git figlet fonts-inconsolata
 	
 
 ### Dotfiles Setup
@@ -122,6 +122,13 @@ Remap the `caps lock` key to `ctrl`.
 I use [`tmuxinator`](https://github.com/tmuxinator/tmuxinator) for quickly setting up `tmux` environments.
 
     gem install tmuxinator
+    
+Change the default console font.
+
+	# Launch the package configuration utility.
+	sudo dpkg-reconfigure console-setup
+	
+	# Select the desired font (I use Terminus) and size (I like 12x24).
     
 
 
