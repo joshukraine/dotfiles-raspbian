@@ -23,7 +23,7 @@ Update packages.
 	
 Other packages I like to install at this point:
 
-	sudo apt-get install vim tree tmux git
+	sudo apt-get install vim tree tmux git figlet
 	
 
 ### Dotfiles Setup
