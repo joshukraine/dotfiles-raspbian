@@ -139,8 +139,18 @@ Change the default console font.
 	
 	# Select the desired font (I use Terminus) and size (I like 12x24).
     
+I recently got a new keyboard/mouse combo. When I first connected them, the mouse was super slow and laggy. After a bit of googling, I fixed it using the following steps based on this [GitHub issue](https://github.com/raspberrypi/linux/issues/642).
 
+	# 1. Edit the file cmdline.txt
+	sudo nano /boot/cmdline.txt
+	
+	# 2. Add the following in-line to whatever is already in the file.
+	usbhid.mousepoll=0
+	
+	# 3. Save and close the file and reboot. Problem solved.
 
 ### Notes
 
 In case you're not me, you'll want to add your own name and email to `~/.dotfiles-raspbian/gitconfig`.
+
+
