@@ -10,7 +10,7 @@ The dotfiles themselves have been adapted from my [OS X setup](https://github.co
 
 Boot the Pi from the new card and run through the initial config.
 
-Connect to the local wifi network either [from the command line](http://www.howtogeek.com/167425/how-to-setup-wi-fi-on-your-raspberry-pi-via-the-command-line/) or [via the GUI](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-3-network-setup/setting-up-wifi-with-raspbian).
+Connect to the local wifi network either [from the command line](https://github.com/joshukraine/dotfiles-raspbian/blob/master/wifi-setup.md) or [via the GUI](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-3-network-setup/setting-up-wifi-with-raspbian).
 
 Test your connection.
 	
