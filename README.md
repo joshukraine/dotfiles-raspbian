@@ -21,16 +21,20 @@ Update packages.
 	sudo apt-get update -y
 	sudo apt-get upgrade -y
 	
-Other packages I like to install at this point:
+Install other packages.
 
-	sudo apt-get install vim tree tmux git figlet fonts-inconsolata
+	sudo apt-get install zsh vim tree tmux git figlet fonts-inconsolata
 	
 
 ### Dotfiles Setup
 
-Install `zsh` and switch to it.
+Verify that `zsh` is installed.
 
-	sudo apt-get install zsh
+	which zsh
+	#=> /usr/bin/zsh
+	
+Change your shell to `zsh`.
+
 	chsh -s $(which zsh)
 
 
