@@ -18,8 +18,7 @@ Test your connection.
 
 Update packages.
 
-	sudo apt-get update -y
-	sudo apt-get upgrade -y
+	sudo apt-get -y update && sudo apt-get -y upgrade
 	
 Install other packages.
 
@@ -106,6 +105,10 @@ Verify that the `install` command is available.
 Install `ruby`.
 	
 	rbenv install <version number>
+	
+Install `rails`-related packages.
+
+	sudo apt-get install -y autoconf automake bison build-essential libreadline6 libreadline6-dev libsqlite3-dev libssl-dev libtool libxml2-dev libxslt-dev libyaml-dev openssl postgresql sqlite3 zlib1g zlib1g-dev
 	
 Install `rails`. (Avoid using `sudo` to prevent `rails` from installing to the system-installed `ruby` directory.
 
