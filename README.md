@@ -55,7 +55,7 @@ Symlink the rc files.
     ln -nfs ~/.dotfiles-raspbian/gemrc ~/.gemrc
     ln -nfs ~/.dotfiles-raspbian/gitignore ~/.gitignore_global
     ln -nfs ~/.dotfiles-raspbian/gitconfig ~/.gitconfig
-    ln -nfs ~/.dotfiles/tmux.conf ~/.tmux.conf
+    ln -nfs ~/.dotfiles-raspbian/tmux.conf ~/.tmux.conf
     ln -nfs ~/.dotfiles-raspbian/vim ~/.vim
     ln -nfs ~/.dotfiles-raspbian/vimrc ~/.vimrc
     ln -nfs ~/.dotfiles-raspbian/zshrc ~/.zshrc
