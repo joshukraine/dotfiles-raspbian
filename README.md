@@ -77,7 +77,7 @@ Install `vim` plugins with [Vundle](https://github.com/gmarik/Vundle.vim).
 
 These are the steps that worked for to get [`rbenv`](https://github.com/sstephenson/rbenv) working on the Pi.
 
-	# Clone the needed files
+	# Clone the needed files.
     git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 	git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 	git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
@@ -87,6 +87,9 @@ These are the steps that worked for to get [`rbenv`](https://github.com/sstephen
 	
 	# Add rbenv init to your shell to enable shims and autocompletion.
 	echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+	
+	# Pick up the changes.
+	source ~/.zshrc
 
 Verify that `rbenv` is properly installed.
 
