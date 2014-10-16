@@ -111,7 +111,7 @@ Install `ruby`.
 	
 Install `rails`-related packages.
 
-	sudo apt-get install -y autoconf automake bison build-essential libreadline6 libreadline6-dev libsqlite3-dev libssl-dev libtool libxml2-dev libxslt-dev libyaml-dev openssl postgresql sqlite3 zlib1g zlib1g-dev
+	sudo apt-get install -y autoconf automake bison build-essential libreadline6 libreadline6-dev libsqlite3-dev libssl-dev libtool libxml2-dev libxslt-dev libyaml-dev nodejs openssl postgresql sqlite3 zlib1g zlib1g-dev
 	
 Install `rails`. (Avoid using `sudo` to prevent `rails` from installing to the system-installed `ruby` directory.
 
