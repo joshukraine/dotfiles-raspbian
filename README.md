@@ -22,7 +22,7 @@ Update packages.
 	
 Install other packages.
 
-	sudo apt-get install zsh vim tree tmux git figlet fonts-inconsolata
+	sudo apt-get install zsh vim tree nmap tmux git figlet fonts-inconsolata
 	
 
 ### Dotfiles Setup
