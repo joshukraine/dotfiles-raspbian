@@ -39,7 +39,7 @@ Again, save and close the file by pressing `Ctrl-X` and agreeing to the prompts.
 
 Either reboot, or bring your wifi network up explicitly:
 
-	sudo ifup wanl0
+	sudo ifup wlan0
 	
 If you get a notice saying `ifup: interface wlan0 already configured` you may need to take it down, then bring it up again:
 
