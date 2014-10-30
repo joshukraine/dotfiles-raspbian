@@ -47,17 +47,17 @@ Close and reopen terminal to complete `oh-my-zsh` install.
 
 Clone this repo.
 
-    git clone https://github.com/joshukraine/dotfiles-raspbian.git ~/.dotfiles-raspbian
+    git clone https://github.com/joshukraine/dotfiles-raspbian.git ~/.dotfiles
 
 Symlink the rc files.
 
-    ln -nfs ~/.dotfiles-raspbian/gemrc ~/.gemrc
-    ln -nfs ~/.dotfiles-raspbian/gitignore ~/.gitignore_global
-    ln -nfs ~/.dotfiles-raspbian/gitconfig ~/.gitconfig
-    ln -nfs ~/.dotfiles-raspbian/tmux.conf ~/.tmux.conf
-    ln -nfs ~/.dotfiles-raspbian/vim ~/.vim
-    ln -nfs ~/.dotfiles-raspbian/vimrc ~/.vimrc
-    ln -nfs ~/.dotfiles-raspbian/zshrc ~/.zshrc
+    ln -nfs ~/.dotfiles/gemrc ~/.gemrc
+    ln -nfs ~/.dotfiles/gitignore ~/.gitignore_global
+    ln -nfs ~/.dotfiles/gitconfig ~/.gitconfig
+    ln -nfs ~/.dotfiles/tmux.conf ~/.tmux.conf
+    ln -nfs ~/.dotfiles/vim ~/.vim
+    ln -nfs ~/.dotfiles/vimrc ~/.vimrc
+    ln -nfs ~/.dotfiles/zshrc ~/.zshrc
     source ~/.zshrc
 
 Set up the `~/.vim/bundle` directory needed by the [Vundle](https://github.com/gmarik/Vundle.vim) plugin manager.
@@ -157,6 +157,6 @@ I recently got a new keyboard/mouse combo. When I first connected them, the mous
 
 ### Notes
 
-In case you're not me, you'll want to add your own name and email to `~/.dotfiles-raspbian/gitconfig`.
+In case you're not me, you'll want to add your own name and email to `~/.dotfiles/gitconfig`.
 
 
