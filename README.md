@@ -82,7 +82,7 @@ Dotfiles Setup
 
 The dotfiles use [Oh My Zsh](http://ohmyz.sh/), so we'll install that first.
 
-	$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+	$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 Next, clone this repo.
 
