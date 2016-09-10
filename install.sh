@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 ################################################################################
 # install
@@ -17,19 +17,15 @@ fancy_echo() {
 set -e # Terminate script if anything exits with a non-zero value
 set -u # Prevent unset variables
 
-files="gitconfig gitignore_global gitmessage tmux.conf vimrc zshrc"
 DOTFILES_DIR=$HOME/dotfiles
 
 fancy_echo "Installing dotfiles..."
 
-for file in $files; do
-  if [ -f $HOME/.$file ]; then
-    fancy_echo ".$file already present. Backing up..."
-    cp $HOME/.$file "$HOME/.${file}_backup"
-    rm -f $HOME/.$file
-  fi
-  fancy_echo "-> Linking $DOTFILES_DIR/$file to $HOME/.$file..."
-  ln -nfs "$DOTFILES_DIR/$file" "$HOME/.$file"
-done
+ln -nfs "$DOTFILES_DIR/gitconfig" "$HOME/.gitconfig"
+ln -nfs "$DOTFILES_DIR/gitignore_global" "$HOME/.gitignore_global"
+ln -nfs "$DOTFILES_DIR/gitmessage" "$HOME/.gitmessage"
+ln -nfs "$DOTFILES_DIR/tmux.conf" "$HOME/.tmux.conf"
+ln -nfs "$DOTFILES_DIR/vimrc" "$HOME/.vimrc"
+ln -nfs "$DOTFILES_DIR/zshrc" "$HOME/.zshrc"
 
 fancy_echo "Dotfiles installation complete!"
