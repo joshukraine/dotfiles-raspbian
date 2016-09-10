@@ -86,11 +86,11 @@ The dotfiles use [Oh My Zsh](http://ohmyz.sh/), so we'll install that first.
 
 Next, clone this repo.
 
-	git clone https://github.com/joshukraine/dotfiles-raspbian.git ~/.dotfiles
+	git clone https://github.com/joshukraine/dotfiles-raspbian.git ~/dotfiles
 
 And finally, symlink the dotfiles by running the install script:
 
-	$ source ~/.dotfiles/install.sh
+	$ source ~/dotfiles/install.sh
 
 NOTE: Vim plugins (specified in the vimrc file) require [Vundle](https://github.com/VundleVim/Vundle.vim#quick-start).
 
