@@ -62,7 +62,7 @@ When finished, reboot.
 
 Install some extra packages.
 
-	sudo apt-get install -y curl zsh vim tmux htop fonts-inconsolata
+	sudo apt-get install -y zsh vim tmux htop fonts-inconsolata
 
 Remap the `caps lock` key to `ctrl`.
 
