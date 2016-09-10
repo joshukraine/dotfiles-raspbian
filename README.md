@@ -23,6 +23,8 @@ Setting up the Pi
 
 After inserting your SD card (which should now contain the new OS image), connect an HDMI cable and keyboard/mouse dongle. Connect the power cable and boot up! With the latest Raspbian image, the Pi boots directly to the desktop.
 
+Finally, select a wifi network and connect.
+
 **Wireless Mouse Fix**
 
 I use a [wireless keyboard and mouse](https://www.amazon.com/Portable-Wireless-Keyboard-Optical-Desktop/dp/B00EQ32YPG/). Before moving on, I like to fix the annoying mouse lag with the following steps:
