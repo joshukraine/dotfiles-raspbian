@@ -1,26 +1,58 @@
-[user]
-	name = Joshua Steele
-	email = joshukraine@gmail.com
 [alias]
-	co = checkout
-	st = status
-	ci = commit
-	br = branch
-	df = diff
-	dfs = diff --staged
-	logg = log --graph --decorate --oneline --abbrev-commit --all
+  a = add
+  aa = add --all
+  ap = add --patch
+  b = branch
+  ba = branch --all
+  recent = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+  ca = commit --amend
+  car = commit --amend --no-edit
+  co = checkout
+  ci = commit -v
+  dc = diff --word-diff --cached --color-words
+  df = diff --word-diff --color-words
+  dfs = diff --staged
+  lg = log --stat --color
+  mup = !git checkout master && git pull && git checkout -
+  pl = pull
+  pum = push -u origin master
+  ps = push
+  sl = log --graph --pretty=format:'%C(yellow)%h%Creset - %C(white)%d%Creset %s %Cblue(%an, %ar)%Creset'
+  sla = log --oneline --decorate --all --graph
+  st = status --short --branch
+  sta = status
+  unstage = reset
+  uncommit = reset --soft HEAD^
 [apply]
-	whitespace = nowarn
+  whitespace = nowarn
 [color]
-	ui = auto
-[branch "master"]
-	remote = origin
-	merge = refs/heads/master
+  ui = auto
+  ignorecase = false
+[commit]
+  template = ~/.gitmessage
 [core]
-	autocrlf = false
-	safecrlf = true
-	editor = vim
-	excludesfile = $HOME/.gitignore_global
-[credential]
+  autocrlf = input
+  safecrlf = true
+  editor = vim
+  excludesfile = ~/.gitignore_global
+[fetch]
+  prune = true
+[gitsh]
+  defaultCommand = status --short --branch
+[gitsh "color"]
+  default = blue
+  untracked = yellow
+  modified = red
+[include]
+  path = ~/.gitconfig.local
+[merge]
+  conflictstyle = diff3
+  ff = only
+[pull]
+  rebase = preserve
 [push]
-	default = matching
+  default = upstream
+[url "https://github.com/"]
+  insteadOf = git@github.com:
+[url "https://"]
+  insteadOf = git://
